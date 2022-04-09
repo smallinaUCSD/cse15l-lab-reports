@@ -16,9 +16,7 @@ You should see a screen like this:
 
  ![VSCode Open](VSCodeOpen.png)
 
-**Step 2: Remotely Connect to UCSD's Server**
-
-[Install SSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
+**Step 2: Remotely Connect to UCSD's Server using Terminal**
 
 For Mac OS users you can use the in built terminal on your device by pressing ⌘ + space and then typing in *terminal*. 
 
@@ -46,7 +44,13 @@ This is what your screen should present:
 
 Then press ⌘ + D to exit the server.
 
-**Step 3: Trying Some Commands**
+*Sidenote: Remotely Connect to UCSD's Server using VSCode*
+
+[Install SSH Extension Pack](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
+
+Launch the terminal/power shell on VSCode. 
+
+**Step 3: Trying Some Commands Common to both Terminal/VSCode**
 
 Open up your terminal using ⌘ + space and then typing terminal in the search bar.
 
@@ -167,7 +171,7 @@ For example:
 
 **Conclusion**
 
-This concludes lab report 1. In this lab report I documented the steps to download and run VS.Code, used vim editor for file operations, and used terminal to perform local and remote operations on UCSD server such as: basic terminal commands, move/copy files, generate and copy an SSH key, and perform remote operations optimally. 
+This concludes lab report 1. In this lab report, I documented how to download and install VSCode and how to use the VSCode IDE, remote extension, and vim editor to perform local and remote file operations on the UCSD server, such as: basic terminal commands, move/copy/run/compile java files, generate and copy an SSH key optimally.
 
 Thanks for reading. 
 

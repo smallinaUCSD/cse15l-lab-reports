@@ -16,7 +16,7 @@ You should see a screen like this:
 
  ![VSCode Open](VSCodeOpen.png)
 
-**Step 2: Remotely Connect to UCSD's Server using Terminal**
+**Step 2: Remotely Connect to UCSD's Server**
 
 For Mac OS users you can use the in built terminal on your device by pressing ⌘ + space and then typing in *terminal*. 
 
@@ -28,7 +28,18 @@ A small window should pop up like this:
 
 ![Real Terminal](RTerminal.png)
 
-Now type this command into your terminal to remotely connect to UCSD's server. 
+*Remotely Connect to UCSD's Server using VSCode*
+
+[Install SSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
+
+[Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+
+
+*Instructions using either Mac Terminal or VSCode IDE*
+
+Launch the terminal/power shell. 
+
+Now type this command into your terminal to remotely connect to UCSD's server.
 
 **Command:** ssh cs15lsp22zz@ieng6.ucsd.edu
 
@@ -43,12 +54,6 @@ This is what your screen should present:
 ![Login Page](Login.png)
 
 Then press ⌘ + D to exit the server.
-
-*Sidenote: Remotely Connect to UCSD's Server using VSCode*
-
-[Install SSH Extension Pack](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
-
-Launch the terminal/power shell on VSCode. 
 
 **Step 3: Trying Some Commands Common to both Terminal/VSCode**
 

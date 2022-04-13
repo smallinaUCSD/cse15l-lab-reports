@@ -1,8 +1,8 @@
-**Lap Report 1** 
+# Lap Report 1
 
 In this lab report I will go over how to download, install and run VSCode, remotely connecting to UCSD's servers, basic terminal commands, moving files, setting an SSH key, and optimize remote running. 
 
-**Step 1: Download VSCode**
+# Step 1: Download VSCode
 
 Click the link below to download VSCode IDE respective to your machine (OS or Windows). The below steps are for Mac OS users. 
 
@@ -16,7 +16,7 @@ You should see a screen like this:
 
  ![VSCode Open](VSCodeOpen.png)
 
-**Step 2: Remotely Connect to UCSD's Server**
+# Step 2: Remotely Connect to UCSD's Server
 
 For Mac OS users you can use the in built terminal on your device by pressing ⌘ + space and then typing in *terminal*. 
 
@@ -55,7 +55,7 @@ This is what your screen should present:
 
 Then press ⌘ + D to exit the server.
 
-**Step 3: Trying Some Commands Common to both Terminal/VSCode**
+# Step 3: Trying Some Commands Common to both Terminal/VSCode
 
 Open up your terminal using ⌘ + space and then typing terminal in the search bar.
 
@@ -63,17 +63,29 @@ Open up your terminal using ⌘ + space and then typing terminal in the search b
 
 Now in your terminal lets practice some commands.
 
+```
+ls
+```
+
 Enter **ls** in your terminal like this:
 
 ![ls command](LsCommand.png)
 
 ls command prints all the files and subdirectories of the current directory. 
 
+```
+pwd (Print Working Directory)
+```
+
 Enter **pwd** in your terminal:
 
 ![pwd command1](PWD1.png)
 
 pwd command prints your working directory. 
+
+```
+cd (Change Directory)
+```
 
 Enter **cd (name of file that was printed with the ls command)**.
 
@@ -85,6 +97,10 @@ Then enter **pwd**. Your current location should have changed because you have e
 
 ![pwd command2](PWD2.png)
 
+```
+Clear
+```
+
 Then enter **clear**.
 
 ![clear command](Clear1.png)
@@ -92,7 +108,7 @@ Then enter **clear**.
 
 clear command clears the terminal screen. 
 
-**Step 4: Move/Copy Files with scp**
+# Step 4: Move/Copy Files with scp
 
 Open up your terminal using ⌘ + space and then typing terminal in the search bar. 
 
@@ -138,7 +154,7 @@ Now enter the ssh command to login into the sever and enter your password. Now u
 
 ![SCP](SCP.png) 
 
-**Step 5: Setting up an SSH key** 
+# Step 5: Setting up an SSH key 
 
 Type in the terminal command ssh-keygen. 
 
@@ -158,7 +174,7 @@ Then type this **scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.e
 
 *Sidenote: change the username and the filepath.* 
 
-**Step 6: Optimize Remote Running** 
+# Step 6: Optimize Remote Running
 
 To run commands directly on the server you can use "" around the terminal command.
 
@@ -174,7 +190,7 @@ For example:
 
 *Sidenote: pressing the up arrow key will allow to access previous terminal commands that you performed.*
 
-**Conclusion**
+# Conclusion
 
 This concludes lab report 1. In this lab report, I documented how to download and install VSCode and how to use the VSCode IDE, remote extension, and vim editor to perform local and remote file operations on the UCSD server, such as: basic terminal commands, move/copy/run/compile java files, generate and copy an SSH key optimally.
 

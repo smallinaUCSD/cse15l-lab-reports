@@ -11,7 +11,7 @@ In this lab report I will go over the three code changes that our group worked o
 
 ![Markdown Test1 Fail](MarkdownTest1.png)
 
-The failure inducing input is that the java program can not handle new line character when parsing the markdown file to find the links. The bug in the system is that code can not handle new lines. As a result of this bug, the symptom is that is an infinite loop. 
+The failure inducing input is that the java program can not handle new line character when parsing the markdown file to find the links. The bug in the system is that code can not handle new lines. As a result of this bug, the symptom is that is an infinite loop.
 
 # Code change 2
 

@@ -37,7 +37,18 @@ The original code provided gave an index out of bounds error.
 
 [Failure Inducing Input: Image Invalid URL or File](https://github.com/smallinaUCSD/markdown-parser/blob/main/Test3.md)
 
-The failure inducing input is that the java program can not handle invalid images. The bug in the system is that code can not handle images having invalid url patterns or files. As a result of this bug, the symptom is that an invalid url is printed.
+The failure inducing input is that the java program can not handle invalid images. The bug in the system is that code can not handle images having invalid url patterns or files. The test file conatained an image link that did not contain https. As a result of this bug, the symptom is that an invalid url is printed.
+
+Examples of invalid url patterns:
+
+* Image tag should begin with an !
+* Image url should be valid http or a file resource
+
+Valid Checks implemented are:
+* ! preceeds image tag 
+* validate url specificied using regular expression
+* validate image by instationating and verifying it 
+
 
 ![Markdown Test3 Fail](MarkDownTest3.png)
 The original code provided gave an invalid url. 

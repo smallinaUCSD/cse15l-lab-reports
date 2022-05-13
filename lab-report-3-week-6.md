@@ -44,7 +44,7 @@ I generated a personal access token as a password is no longer accepted.
 
 ![Success Push](GitPush.png)
 
-[Link for resulting commit](https://github.com/smallinaUCSD/markdown-parser/commits/main)
+[Link for resulting commit](https://github.com/smallinaUCSD/markdown-parser/commit/b81d7e0c4382d6c1a0a3b03bd61442e4ad3db464)
 
 # Task 3: Copy whole directories with scp -r
 
@@ -63,10 +63,12 @@ I compiled and ran the java file on the server.
 To copy folder, compile, and run on the server using a single line command: 
 
 ```
-scp -r /Users/smallina/Documents/GitHub/markdown-parser ieng6:~/markdown-parser; ssh ieng6 cd markdown-parser; javac MarkdownParseTest.java; java MarkdownParseTest
+scp -r /Users/smallina/Documents/GitHub/markdown-parser ieng6:~/markdown-parser; ssh ieng6 cd markdown-parser; javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java;
+java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest
 ```
 
-![Single Line](SingleLine.png)
+![Single Line](singlelinecommand.png)
+![Single Line Part2](singlelinepart2.png)
 
 ![Compile and Run](Compileandrunsingleline.png)
 

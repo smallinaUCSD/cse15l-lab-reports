@@ -63,7 +63,7 @@ I compiled and ran the java file on the server.
 To copy folder, compile, and run on the server using a single line command: 
 
 ```
-scp -r /Users/smallina/Documents/GitHub/markdown-parser ieng6:~/markdown-parser; ssh ieng6 cd markdown-parser; javac MarkdownParse.java; java MarkdownParse Test1.md
+scp -r /Users/smallina/Documents/GitHub/markdown-parser ieng6:~/markdown-parser; ssh ieng6 cd markdown-parser; javac MarkdownParseTest.java; java MarkdownParseTest
 ```
 
 ![Single Line](SingleLine.png)

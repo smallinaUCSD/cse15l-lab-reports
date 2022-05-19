@@ -126,7 +126,7 @@ When I ran the test file all three snippets failed.
 Do you think there is a small (<10 lines) code change that will make your program work for snippet 1 and all related cases that use inline code with backticks? If yes, describe the code change. If not, describe why it would be a more involved change.
 
 **Response:**  
-A small code change is required to check for ` character and the wellformness of the syntax. The code change would need to include code that skips the character ` when parsing. 
+A small code change is required to check for \` character and the wellformness of the syntax. The code change would need to include code that skips the character \` when parsing. 
 
 
 # Question 2

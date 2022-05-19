@@ -1,8 +1,8 @@
 # Lab Report 4
 
-In this lab report 
-
 [Link to Git repo from week 7](https://github.com/Trinnnn/markdown-parser)
+
+I cloned this repository into a folder called clone using github desktop. 
 
 ## Snippet 1
 

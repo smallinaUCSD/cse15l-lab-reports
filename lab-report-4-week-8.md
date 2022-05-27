@@ -123,14 +123,14 @@ When I ran the test file all three snippets failed.
 Do you think there is a small (<10 lines) code change that will make your program work for snippet 1 and all related cases that use inline code with backticks? If yes, describe the code change. If not, describe why it would be a more involved change.
 
 **Response:**  
-I believe a minor code change is required. I would include an if condition to determine whether the character \` is in the current line. If the character is present, we can write code to skip the character because links with correct syntax do not contain the \` chracter. One solution I propose for this problem is to write a helper method that removes all instances of the \` character in the current line.
+I believe a minor code change is required. I would include an if condition to determine whether the character \` is in the current line. If the character is present, we can write code to skip the character because links with correct syntax do not contain the \` character. One solution I propose for this problem is to write a helper method that removes all instances of the \` character in the current line using string functions.
 
 # Question 2
 **Question:**
 Do you think there is a small (<10 lines) code change that will make your program work for snippet 2 and all related cases that nest parentheses, brackets, and escaped brackets? If yes, describe the code change. If not, describe why it would be a more involved change.
 
 **Response:**  
-I believe a significant code change is required. I'd use a data structure similar to a stack to push whenever a [,( appears and pop whenever its inverse appears. We'd also have to account for the case where the stack isn't empty by the end of the line. We can conclude that this is a significant code change because it makes use of a data structure, instance variables, and possibly helper methods. 
+I believe a significant code change is required. I'd use a data structure similar to a stack to push whenever a [,( appears and pop whenever its ],) appears. We'd also have to account for the case where the stack isn't empty by the end of the line. We can conclude that this is a significant code change because it makes use of a data structure, instance variables, and possibly helper methods. 
  
 # Question 3
 **Question:**

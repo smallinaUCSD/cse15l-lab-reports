@@ -63,7 +63,7 @@ The expected output for test 2 should be no links as seen in the preview there i
 ![Code Snippet 1](CodeSnippet1.png)
 ![Code Snippet 2](Snippet2.png)
 
-According to [daring fireball](https://daringfireball.net/projects/markdown/syntax#link) there are multiple different ways to have links in a markdown file. In the case that failed, the link was followed by a : which is another way of having a link in a markdown file. The code fix for this would be either adding helper methods or additional if statements to check to see if the next character after a close bracket is a : and to check if there additional text after the link which needs to removed as its not part of the link as shown below.
+According to [daring fireball](https://daringfireball.net/projects/markdown/syntax#link) there are multiple different ways to have links in a markdown file. In the case that failed, the link was followed by a : which is another way of having a link in a markdown file. The code fix for this would be either adding helper methods or additional if statements to check to see if the next character after a close bracket is a : and to check if there additional text after the link which is not part of the link as shown in the picture below.
 
 ![Example](Example.png)
 

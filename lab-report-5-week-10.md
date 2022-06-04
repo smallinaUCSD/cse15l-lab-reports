@@ -14,56 +14,31 @@ For this lab I used [this link]() which shows markdown code preview.
 
 # Test 1 and 2 
 
-Code for testing: 
-
-```
-import static org.junit.Assert.*;
-import org.junit.*;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.List;
-
-public class MarkdownParseTest {
-
-    @Test
-    public void testFile1() throws IOException {
-        String contents= Files.readString(Path.of("Test4.md"));
-        List<String> expect = List.of();
-        assertEquals(MarkdownParse.getLinks(contents), expect);
-    }
-    @Test
-    public void testFile2() throws IOException {
-        String contents= Files.readString(Path.of("Test5.md"));
-        List<String> expect = List.of("https://spec.commonmark.org/url");
-        assertEquals(MarkdownParse.getLinks(contents), expect);
-    }
-}
-```
-
-![My Output](MyOutput.png) 
-
-This is my output. The second test (119.md) passed however the first one failed (198.md). The implementation for test 119.md is correct however for test 198.md it is incorrect.
-
-![Their Output](TheirOutput.png)
-
-This is their output. The second test (119.md) passed however the first one failed (198.md). The implementation for test 119.md is correct however for test 198.md it is incorrect.
-
 ![Expected Output](Test198.png)
 
-The expected output for test 1 should be foo since its a valid link in the preview. 
+The expected output for test **198.md** should be foo since its a valid link in the preview. 
+```
+Expected output: [https://spec.commonmark.org/url]
+```
 
 ![Expected Output](Test119.png)
 
-The expected output for test 2 should be no links as seen in the preview there is no valid link present. 
+The expected output for test **119.md** should be no links as seen in the preview there is no valid link present. 
+```
+Expected output: []
+```
+
+![My Output](Output.png) 
+
+This is my output. The test for **119.md** passed as my output **[]** matched the expected output **[]**. However, for test **198.md** my output **[]** did not match the expected output of [https://spec.commonmark.org/url]. My output for test **198.md** was missing the link. 
+
 
 # Fix the bug 
 
 ![Code Snippet 1](CodeSnippet1.png)
 ![Code Snippet 2](Snippet2.png)
 
-According to [daring fireball](https://daringfireball.net/projects/markdown/syntax#link) there are multiple different ways to have links in a markdown file. In the case that failed, the link was followed by a : which is another way of having a link in a markdown file. The code fix for this would be either adding helper methods or additional if statements to check to see if the next character after a close bracket is a : and to check if there additional text after the link which is not part of the link as shown in the picture below.
+According to [daring fireball](https://daringfireball.net/projects/markdown/syntax#link) there are multiple different ways to have links in a markdown file. In the case that failed, the close bracked was follwed by a :. This is another way of having a link in a markdown file. One code fix that I suggest for this would be either adding helper methods that check for valid syntax. Another possible code suggestions would be to have additional if statements to check to see if the next character after a close bracket is a :. Lastly, when parsing the link after the colon its important to check for additional text after the link as is not part of the link as shown in the picture below.
 
 ![Example](Example.png)
 

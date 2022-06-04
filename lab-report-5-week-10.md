@@ -2,7 +2,7 @@
 
 # Finding Tests 
 
-    I found two tests that had different answers than the implementation that was provided by searching through the test cases manually and testing each one until I found something that did not match. 
+I found two tests that had different answers than the implementation that was provided by searching through the test cases manually and testing each one until I found something that did not match. 
 
 # Link to two test 
 

@@ -2,15 +2,15 @@
 
 ## Finding Tests 
 
-I first cloned this [repository](https://github.com/nidhidhamnani/markdown-parser.git)
+I first cloned this [repository.](https://github.com/nidhidhamnani/markdown-parser.git)
 
-Then I copied over the folder test-files from the source folder to my markdown-parser using the command:
+Then I copied over the folder test-files from the source folder to my markdown-parser folder using the command:
 
 ```
 cp -r /Users/smallina/Documents/GitHub/Lab5/Untitled/test-files markdown-parser
 ```
 
-I renamed the file using this command:
+I renamed the file to test-files using this command:
 
 ```
 mv /Users/smallina/Documents/GitHub/markdown-parser/markdown-parser /Users/smallina/Documents/GitHub/markdown-parser/test-files
@@ -22,7 +22,7 @@ I then copied over the file script.sh using the command
 cp /Users/smallina/Documents/GitHub/Lab5/Untitled/script.sh markdown-parser
 ```
 
-I renamed the file using this command:
+I renamed the file to script.sh using this command:
 
 ```
 mv /Users/smallina/Documents/GitHub/markdown-parser/markdown-parser /Users/smallina/Documents/GitHub/markdown-parser/script.sh 
